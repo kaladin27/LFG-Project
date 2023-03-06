@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>AMEX Project</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+  <a href="index.html" class="navbar-brand pixelated-text">LFG!</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#home" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about-head-section" class="nav-link">About Us</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Links
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://discord.gg/BmambYrQ">Discord Server</a>
+            <a class="dropdown-item" href="https://gamerlinkapp.com/">Our Friends at GamerLink</a>
+               <a class="dropdown-item" href="ReadMe.html" target="_blank page">ReadMeFile</a> 
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#irl-head-section" class="nav-link">IRL</a>
+      </li>
+      <li class="nav-item">
+        <a href="#share-head-section" class="nav-link">Share</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner container">
+        <div class="row">
+          <div class="col-lg-8 d-none d-lg-block">
+            <h1 class="display-4">Makes finding
+              <strong style="color: #ff9933">Players</strong> and
+              <strong style="color: #ff9933">Play Groups</strong> easy!
+            </h1>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Find Fireteam/Squad members!
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Find Players and Game Masters!
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Make Friends and Memories!
+              </div>
+            </div>
+          </div>
+
+            <style>
+                .card-body{
+                    background: rgba(0, 0, 0, 0.7);
+                }
+            </style>
+            
+          <div class="col-lg-4">
+  <div class="text-center card-form">
+    <div class="card-body">
+      <h3>Register Today!</h3>
+      <p>Please fill out this form to register</p>
+      <form id="registration-form">
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" placeholder="Username" name="username" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control form-control-lg" placeholder="Email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" required pattern=".{8,}">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg" placeholder="Confirm Password" name="confirm_password" required pattern=".{8,}">
+        </div>
+        <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('registration-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent the form from submitting normally
+    // your JavaScript code here
+    console.log('Form submitted!');
+  });
+</script>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT US HEAD -->
+  <section id="about-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">About Us!</h1>
+          <p class="lead">At LFG we know that games; regardless of the medium, are better enjoyed with friends! Which is why we have created a place for anyone and everyone! Whether your looking for a Fireteam to enter the Crucible in Destiny, a group of adventurers to foil your BBEG's nefarious plans, or a group to go LARPing with; we make it easy to find other people that share your interests!</p>
+          <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT SECTION -->
+  <section id="explore-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://i.pinimg.com/736x/fe/7e/87/fe7e87b3347ba5328cd636b73ed9da52.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="col-md-6">
+          <h3>Connect with the Community!</h3>
+          <p>Once you sign up you can connect with people on our webpage OR our LFG Discord server!</p>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              PLACE HOLDER FOR SITE SERVER!
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              <a href="https://discord.com/channels/1079893724810719303/1079893725431472149" target="_blank" rel="noopener noreferrer" style="font-size: 20px; color: black;"><strong>Discord</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IRL HEAD -->
+  <section id="irl-head-section" style="background-color: orange;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+            <h1 class="display-4"><strong style="color:#000">IRL Meetups</strong></h1>
+            <p class="lead"><strong style="color:#fff">Some server admins also host IRL meetups!</strong></p>
+          <a href="#" class="btn btn-outline-dark"><a href="https://calendar.google.com/" style="font-size: 20px; color: white;"><strong>IRL MeetUp Calendar</strong></a>
+</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IRL RULES SECTION -->
+  <section id="irl-section" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-2">
+          <img src="https://d.ibtimes.co.uk/en/full/1478689/gaming-gamers.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="col-md-6 order-1">
+          <h3>IRL Rules!</h3>
+          <p>In order to ensure the safety and enjoyment of everyone there are <strong style=color:white>TWO VERY IMPORTANT RULES</strong> that you must agree to:</p>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              Be <strong>Respectful and Kind</strong>. Simple and sweet. Respect eachothers boundries/space and don't be a troll. 
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              Be <strong>Courteous</strong> to those around you and especially to any staff working at the venue you are attending. You represent not only your group but the LFG brand as a whole.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHARE HEAD -->
+  <section id="share-head-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">Share</h1>
+          <p class="lead">Please join us on all the social medias! Once you sign up you can share to our Facebook, Twitter, and Discord server!</p>
+          <a href="#" class="btn btn-outline-dark">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules To ABIDE BY SECTION -->
+  <section id="share-section" style="background-color: orange;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="height: 350px">
+          <img src="https://2game.com/wp/wp-content/uploads/2019/08/retro_banner.jpg" alt="" class="img-fluid mb-3 rounded-circle" style="height: 320px;" >
+        </div>
+        <div class="col-md-6">
+            <h3 style="color:#000">Rules to Abide by!</h3>
+                <p><strong style="color:#fff">These are the general rules to abide by at all times, whether it be virtual or IRL. Please alert a moderator if you find anyone violating the rules. For a more detailed look at rules you can click on our Rules page, it is also pinned to our Discord Server in the <a href="https://discord.com/channels/1079893724810719303/1079893725431472149" target="_blank" rel="noopener noreferrer" style="font-size: 20px; color: black;"> #general </a>channel or the <a href="https://discord.com/channels/1079893724810719303/1080176797938896967" target="_blank" rel="noopener noreferrer" style="font-size: 20px; color: black;">#rules</a> channel
+
+ </strong></p>
+            <div class="d-flex">
+            <div class="p-4 align-self-start">
+                <span style="font-size: 1.2em; font-weight: bold; color: #000;">1.</span>
+                </div>
+        <div class="p-4 align-self-end">
+            <strong style="color:#fff">Treat others the way you want to be treated (or better in some cases).</strong>
+              </div>
+             </div>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <span style="font-size: 1.2em; font-weight: bold; color: #000;">2.</span>
+            </div>
+            <div class="p-4 align-self-end">
+                <strong style="color:#fff">No gate-keeping! Games are meant to be played and enjoyed, not kept from those who might also enjoy it. </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <h3>LFG INC</h3>
+          <p>Copyright &copy;
+            <span id="year"></span>
+          </p>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
